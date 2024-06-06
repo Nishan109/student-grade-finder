@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main(){
+  int s1,s2,s3,s4,s5;
+  printf("enter the english marks:");
+  scanf("%d",&s1);
+  printf("enter the maths marks:");
+  scanf("%d",&s2);
+  printf("enter the pps marks:");
+  scanf("%d",&s3);
+  printf("enter the chemistry marks:");
+  scanf("%d",&s4);
+  int sum=s1+s2+s3+s4;
+  if(sum>400){
+    printf("you are not enter right marks");
+  }
+  else{
+  printf("the sum of all subjects is:%d\n",sum);
+  int percentage=(s1+s2+s3+s4)/4;
+  printf("the percentage is %d\n",percentage);
+  if(percentage>=90){
+    printf("grade A");
+  }
+ else if(percentage>=80){
+    printf("grade B");
+  }
+  else if(percentage>=70){
+    printf("grade C");
+  }
+else if(percentage>=40){
+    printf("grade D");
+}
+  else if(percentage>=0){
+    printf("grade F");
+  }
+  else{
+    printf("invalid marks");
+  }
+  return 0;
+}
+}
